@@ -8,4 +8,6 @@ This project aims to find better weights that improve on the long term performan
 Interestingly, based on the SP500 historical data, the weights w perform much better when the original uncorrected stock price is considered, without normalizing it. The resulting index will have mostly stocks prices around $50 with some in single and triple digits. The single digit ones provide high percentage growth and volatility, while the triple digit stocks have lower percentage gains but are more stable, at least based on the training data considered.
 
 How to run:
-
+```python
+stockindex2.py -f sp500v6_adj.csv -g sp500v6_unadj.csv -p 126 -r 126 -n 50
+```
