@@ -10,7 +10,9 @@ Interestingly, based on the SP500 historical data, the weights w perform much be
 How to run:
 ```python
 python stockindex2.py -f sp500v6_adj.csv -g sp500v6_unadj.csv -p 126 -r 126 -n 50
+```
 
+```
 python stockindex2.py -h
 usage: stockindex2.py [-h] -f FILE1 -g FILE2 [-ef MSEFILE] [-p PASTN]
                       [-r RATE] [-n TOPN] [-c CAPITAL] [-o ORDER] [-b BOTTOM]
