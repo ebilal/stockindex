@@ -36,7 +36,7 @@ def get_args():
     parser.add_argument(
         '-w', '--weight', type=int, help='How to weight the TOPN stocks: 0 - equal weights, 1 - non-equal weights (Default 0).', required=False, default=0)
     parser.add_argument(
-        '-s', '--solver', type=int, help='Choose solver: 0 - spectral decomposition, 1 - least squares, 2 - spectral decomposition plus least squares (Default 0).', required=False, default=0)
+        '-s', '--solver', type=int, help='Choose solver: 0 - spectral decomposition, 1 - least squares, 2 - spectral decomposition plus least squares (Default 1).', required=False, default=0)
     parser.add_argument(
         '-rr', '--returnrate', type=int, help='Display investment return every rr days (Default 252).', required=False, default=252)
     parser.add_argument(
