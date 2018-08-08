@@ -5,7 +5,7 @@ SPY or other index funds that follow SP500 index generally use the market capita
 
 This project aims to find better weights that improve on the long term performance of SP500. The central idea is that each ticker represents a prediction about how the economy is doing. So the question becomes what is the best way to combine the stocks in order to achive this goal. Since there is no perfect measurement of "how the economy is doing" (lets call this variable m) we'll assume it's unknown. Viewed through the prism of unsupervised ensemble regression, for stock s_i if e_ij = E[(s_i - s_j)^2] then we can find e_i = E[(s_i - m)^2] by solving minE[(e_ij - e_i - e_j)^2], e_i>0. The weights for each stock are now w = 1 / e_i.
 
-Interestingly, based on the SP500 historical data, the weights w perform much better when the original uncorrected stock price is considered, without normalizing it. The resulting index will have mostly stocks prices around $50 with some in single and triple digits. The single digit ones provide high percentage growth and volatility, while the triple digit stocks have lower percentage gains but are more stable, at least based on the training data considered.
+Interestingly, based on the SP500 historical data, the weights w perform much better when the original uncorrected stock price is considered, without percent normalization. The resulting index will have mostly stocks prices around $50 with some in single and triple digits. The single digit ones provide high percentage growth and volatility, while the triple digit stocks have lower percentage gains but are more stable, at least based on the training data considered.
 
 How to run:
 ```python
